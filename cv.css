@@ -3,22 +3,29 @@ body {
 margin: 0;
 padding: 0;
 font-family: Arial;
-height: 100vh;
-min-height: 100vh;
+width: 100%;
+height: 100%;
+min-height: 100%;
+min-width: 100%;
 }
 
-main {
-background: #ecf0f1 ;
-padding: 20px;
-flex: 1;
-}
 
 header {
-background: #a39898;
+height: 120px;
  color: white;
  padding: 1rem;
  display: flex;
 justify-content: center;
+align-items: center;
+background: linear-gradient(45deg,#16a085,#223344);
+background-size: 180% 180%;
+animation: animarDegrade 18s ease infinite;
+}
+
+@keyframes animarDegrade {
+0% { background-position: 0% 50%;}
+50%{background-position: 100% 50% }
+100%{background-position: 0% 50%;}
 }
 
 section{
@@ -31,20 +38,23 @@ aside {
  padding: 20px;
  width: 250px; 
  justify-items: center;
- align-: center;
  }
-
 img{
-border-radius: 50%;
+border-radius: 20%
 }
-
  section > div {
  display: flex;
  flex-direction: column;
- padding: 30px ;
- background-color: rgba(255, 235, 205, 0.952);
+ padding: 35px;
+ background:#f3f3f3;
 }
-
-div > ul > p {
-
+.caja{
+  padding: 1.5rem;
+ background: linear-gradient(45deg,#16a085,#223344);
+ background-size: 180% 180%;
+ animation: animarDegrade 18s ease infinite;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border: 1px solid #2c3e50;
+  flex: 1 1 300px;
 }
